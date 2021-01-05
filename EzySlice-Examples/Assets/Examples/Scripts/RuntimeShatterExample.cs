@@ -36,10 +36,18 @@ public class RuntimeShatterExample : MonoBehaviour {
             if (shatters != null && shatters.Length > 0) {
                 objectToShatter.SetActive(false);
 
+                var rbSource = objectToShatter.GetComponentInChildren<Rigidbody>();
+                
                 // add rigidbodies and colliders
                 foreach (GameObject shatteredObject in shatters) {
                     shatteredObject.AddComponent<MeshCollider>().convex = true;
-                    shatteredObject.AddComponent<Rigidbody>();
+
+                    var rb = shatteredObject.AddComponent<Rigidbody>();
+                    if (rbSource)
+                    {
+                        rb.velocity = rbSource.velocity;
+                        rb.angularVelocity = rbSource.angularVelocity;
+                    }
 
                     prevShatters.Add(shatteredObject);
                 }
@@ -56,11 +64,19 @@ public class RuntimeShatterExample : MonoBehaviour {
         if (randShatter != null && randShatter.Length > 0) {
             randomObject.SetActive(false);
 
+            var rbSource = randomObject.GetComponentInChildren<Rigidbody>();
+
             // add rigidbodies and colliders
             foreach (GameObject shatteredObject in randShatter) {
                 shatteredObject.AddComponent<MeshCollider>().convex = true;
-                shatteredObject.AddComponent<Rigidbody>();
 
+                var rb =shatteredObject.AddComponent<Rigidbody>();
+                if (rbSource)
+                {
+                    rb.velocity = rbSource.velocity;
+                    rb.angularVelocity = rbSource.angularVelocity;
+                }
+                
                 prevShatters.Add(shatteredObject);
             }
         }
