@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Runtime.InteropServices;
 using UnityEditor;
 using EzySlice;
 
@@ -7,29 +8,34 @@ using EzySlice;
  * This is a simple Editor helper script for rapid testing/prototyping! 
  */
 [CustomEditor(typeof(ShatterExample))]
-public class ShatterExampleEditor : Editor {
+public class ShatterExampleEditor : Editor
+{
     public GameObject source;
     public Material crossMat;
     public int slice;
 
-    public override void OnInspectorGUI() {
+    public override void OnInspectorGUI()
+    {
         ShatterExample plane = (ShatterExample)target;
 
         source = (GameObject)EditorGUILayout.ObjectField(source, typeof(GameObject), true);
 
-        if (source == null) {
+        if (source is null)
+        {
             EditorGUILayout.LabelField("Add a GameObject to Shatter.");
 
             return;
         }
 
-        if (!source.activeInHierarchy) {
+        if (!source.activeInHierarchy)
+        {
             EditorGUILayout.LabelField("Object is Hidden. Cannot Slice.");
 
             return;
         }
 
-        if (source.GetComponent<MeshFilter>() == null) {
+        if (source.GetComponent<MeshFilter>() is null)
+        {
             EditorGUILayout.LabelField("GameObject must have a MeshFilter.");
 
             return;
@@ -38,11 +44,12 @@ public class ShatterExampleEditor : Editor {
         crossMat = (Material)EditorGUILayout.ObjectField(crossMat, typeof(Material), true);
         slice = EditorGUILayout.IntSlider(slice, 1, 20);
 
-        if (GUILayout.Button("Shatter Object")) {
-            if (plane.ShatterObject(source, slice, crossMat)) {
+        if (GUILayout.Button("Shatter Object"))
+        {
+            if (!(plane.ShatterObject(source, slice, crossMat) is null))
+            {
                 source.SetActive(false);
             }
         }
     }
 }
-
