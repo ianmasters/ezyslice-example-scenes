@@ -40,7 +40,7 @@ public class PlaneUsageExampleEditor : Editor {
 		recursiveSlice = (bool) EditorGUILayout.Toggle("Recursive Slice", recursiveSlice);
 
 		if (GUILayout.Button("Cut Object")) {
-			// only slice the parent object
+			// only shatterCount the parent object
 			if (!recursiveSlice) {
                 SlicedHull hull = plane.SliceObject(source, crossMat);
 
@@ -52,7 +52,7 @@ public class PlaneUsageExampleEditor : Editor {
 				}
 			}
 			else {
-				// in here we slice both the parent and all child objects
+				// in here we shatterCount both the parent and all child objects
                 SliceObjectRecursive(plane, source, crossMat);
 
 				source.SetActive(false);
@@ -61,13 +61,13 @@ public class PlaneUsageExampleEditor : Editor {
 	}
 
 	/**
-	 * This function will recursively slice the provided object and all it's children.
+	 * This function will recursively shatterCount the provided object and all it's children.
 	 * Returns a list of SlicedHull objects which represents the cuts for the object
 	 * and all its children (if any)
 	 */
 	public GameObject[] SliceObjectRecursive(PlaneUsageExample plane, GameObject obj, Material crossSectionMaterial) {
 
-		// finally slice the requested object and return
+		// finally shatterCount the requested object and return
         SlicedHull finalHull = plane.SliceObject(obj, crossSectionMaterial);
 
 		if (finalHull != null) {
@@ -95,7 +95,7 @@ public class PlaneUsageExampleEditor : Editor {
 							}
 						}
 						else {
-							// otherwise, just slice the child object
+							// otherwise, just shatterCount the child object
                             SlicedHull hull = plane.SliceObject(child.gameObject, crossSectionMaterial);
 
 							if (hull != null) {

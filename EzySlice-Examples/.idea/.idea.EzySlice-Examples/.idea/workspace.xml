@@ -2,46 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a876f2fb-09b3-4fcc-939b-987617f8d205" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/riderModule.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/DebugDrawingExtension.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/DebugDrawingExtension/DebugExtension.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/DebugDrawingExtension/DebugExtension.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/DebugDrawingExtension/Example.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/DebugDrawingExtension/Example/Example.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/DebugDrawingExtension/Example/Example.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/DebugDrawingExtension/Example/Example.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/DebugDrawingExtension/Example/Example.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/DebugDrawingExtension/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/DebugDrawingExtension/readme.txt.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/Debug/Runtime/RuntimeShatterExample.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/Debug/Runtime/RuntimeShatterExample/LightingData.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/Debug/Runtime/RuntimeShatterExample/LightingData.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/Debug/Runtime/RuntimeShatterExample/ReflectionProbe-0.exr" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/Debug/Runtime/RuntimeShatterExample/ReflectionProbe-0.exr.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/Debug/Textures/Ground.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/Debug/Textures/Ground.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/Debug/Textures/TestPlane.mat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Examples/Debug/Textures/TestPlane.mat.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MeshEx.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MeshEx.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/EzySlice-Examples.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Examples/Debug/Runtime/RuntimeShatterExample.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/Debug/Runtime/RuntimeShatterExample.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/Debug/Textures/TestPlane.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/Debug/Textures/TestPlane.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/Scripts/Editor/PlaneUsageExampleEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/Scripts/Editor/PlaneUsageExampleEditor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Examples/Scripts/Editor/ShatterExampleEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/Scripts/Editor/ShatterExampleEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/Scripts/PlaneUsageExample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/Scripts/PlaneUsageExample.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Examples/Scripts/RuntimeShatterExample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/Scripts/RuntimeShatterExample.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Examples/Scripts/ShatterExample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/Scripts/ShatterExample.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/EzySlice" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EzySlice" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Framework/Intersector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Framework/Intersector.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Framework/Plane.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Framework/Plane.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Framework/Triangulator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Framework/Triangulator.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/SlicedHull.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/SlicedHull.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Slicer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Slicer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/SlicerExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/SlicerExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,34 +35,37 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C881E71-2F79-461D-96F9-95658A2D07FF/f9/059254ea/Plane.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/Ian/Unity/ezyslice-example-scenes/EzySlice-Examples/Assets/EzySlice/EzySlice/Slicer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C881E71-2F79-461D-96F9-95658A2D07FF/f9/059254ea/Plane.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C881E71-2F79-461D-96F9-95658A2D07FF/d7/64c1e2f6/InvokableCall.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/EzySlice/EzySlice/Slicer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Users/Ian/Unity/ezyslice-example-scenes/EzySlice-Examples/Assets/EzySlice/EzySlice/Slicer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file:///Applications/Unity/Hub/Editor/2020.2.1f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C881E71-2F79-461D-96F9-95658A2D07FF/27/255861db/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DebugDrawingExtension/DebugExtension.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C881E71-2F79-461D-96F9-95658A2D07FF/95/609cd2ca/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C881E71-2F79-461D-96F9-95658A2D07FF/d0/1e7d4de7/Debug.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file:///Applications/Unity/Hub/Editor/2020.2.1f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/913E4BB3-45CE-431F-BA1E-37D268006ABF/1e/14385747/InspectorElement.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C881E71-2F79-461D-96F9-95658A2D07FF/e7/ac6398dc/Random.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9577AC7A-62EF-4317-9789-031239BA8798/d0/69b66dcc/Random.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Users/Ian/Unity/ezyslice-example-scenes/EzySlice-Examples/Assets/EzySlice/EzySlice/Slicer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C881E71-2F79-461D-96F9-95658A2D07FF/e7/ac6398dc/Random.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9577AC7A-62EF-4317-9789-031239BA8798/dd/cc3b36ba/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C881E71-2F79-461D-96F9-95658A2D07FF/e0/8e2dc70d/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/63582776-4962-4670-81A3-96D130631DF1/b2/550d1263/Undo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C881E71-2F79-461D-96F9-95658A2D07FF/2a/19436b22/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/63582776-4962-4670-81A3-96D130631DF1/3a/e0256090/Editor.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Examples/Scripts/ShatterExample.cs" />
-      <option value="$PROJECT_DIR$/Assets/Examples/Scripts/Editor/ShatterExampleEditor.cs" />
       <option value="$PROJECT_DIR$/Assets/MeshEx.cs" />
-      <option value="$PROJECT_DIR$/Assets/EzySlice/EzySlice/SlicedHull.cs" />
-      <option value="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Slicer.cs" />
-      <option value="$PROJECT_DIR$/Assets/EzySlice/EzySlice/SlicerExtensions.cs" />
       <option value="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Framework/Plane.cs" />
+      <option value="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Framework/Intersector.cs" />
+      <option value="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Slicer.cs" />
+      <option value="$PROJECT_DIR$/Assets/EzySlice/EzySlice/SlicedHull.cs" />
+      <option value="$PROJECT_DIR$/Assets/Examples/Scripts/Editor/ShatterExampleEditor.cs" />
+      <option value="$PROJECT_DIR$/Assets/EzySlice/EzySlice/SlicerExtensions.cs" />
       <option value="$PROJECT_DIR$/Assets/Examples/Scripts/RuntimeShatterExample.cs" />
+      <option value="$PROJECT_DIR$/Assets/Examples/Scripts/ShatterExample.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1maCJ1JyhmhoNl5jUVlLnqOuWcw" />
@@ -119,10 +97,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="98359">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="57919">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="98359" />
+      <option name="pid" value="57919" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -171,10 +149,10 @@
           <line>50</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Examples/Scripts/Editor/PlaneUsageExampleEditor.cs" initialLine="50" containingFunctionPresentation="method 'OnInspectorGUI'">
             <startOffsets>
-              <option value="1378" />
+              <option value="1385" />
             </startOffsets>
             <endOffsets>
-              <option value="1402" />
+              <option value="1409" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="11" />
@@ -184,117 +162,117 @@
           <line>57</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Examples/Scripts/Editor/PlaneUsageExampleEditor.cs" initialLine="57" containingFunctionPresentation="method 'OnInspectorGUI'">
             <startOffsets>
-              <option value="1554" />
+              <option value="1568" />
             </startOffsets>
             <endOffsets>
-              <option value="1578" />
+              <option value="1592" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Examples/Scripts/RuntimeShatterExample.cs</url>
-          <line>115</line>
+          <line>143</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Examples/Scripts/RuntimeShatterExample.cs" initialLine="57" containingFunctionPresentation="method 'RandomShatter'">
             <startOffsets>
-              <option value="3293" />
+              <option value="4279" />
             </startOffsets>
             <endOffsets>
-              <option value="3356" />
+              <option value="4342" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Examples/Scripts/RuntimeShatterExample.cs</url>
-          <line>120</line>
+          <line>148</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Examples/Scripts/RuntimeShatterExample.cs" initialLine="63" containingFunctionPresentation="method 'RandomShatter'">
             <startOffsets>
-              <option value="3469" />
+              <option value="4455" />
             </startOffsets>
             <endOffsets>
-              <option value="3479" />
+              <option value="4465" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/EzySlice/EzySlice/SlicedHull.cs</url>
-          <line>202</line>
+          <line>209</line>
           <properties documentPath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/SlicedHull.cs" initialLine="187" containingFunctionPresentation="method 'Reset'">
             <startOffsets>
-              <option value="7573" />
+              <option value="7772" />
             </startOffsets>
             <endOffsets>
-              <option value="7574" />
+              <option value="7773" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="68" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/EzySlice/EzySlice/SlicedHull.cs</url>
-          <line>208</line>
+          <line>215</line>
           <properties documentPath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/SlicedHull.cs" initialLine="193" containingFunctionPresentation="property 'Current'">
             <startOffsets>
-              <option value="7740" />
+              <option value="7939" />
             </startOffsets>
             <endOffsets>
-              <option value="7747" />
+              <option value="7946" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Examples/Scripts/ShatterExample.cs</url>
-          <line>18</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Examples/Scripts/ShatterExample.cs" initialLine="18" containingFunctionPresentation="method 'ShatterObject'">
-            <startOffsets>
-              <option value="648" />
-            </startOffsets>
-            <endOffsets>
-              <option value="667" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="77" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Examples/Scripts/Editor/ShatterExampleEditor.cs</url>
-          <line>48</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Examples/Scripts/Editor/ShatterExampleEditor.cs" initialLine="48" containingFunctionPresentation="method 'OnInspectorGUI'">
-            <startOffsets>
-              <option value="1257" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1317" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Examples/Scripts/RuntimeShatterExample.cs</url>
-          <line>73</line>
+          <line>86</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Examples/Scripts/RuntimeShatterExample.cs" initialLine="73" containingFunctionPresentation="method 'Explode'">
             <startOffsets>
-              <option value="2097" />
+              <option value="2804" />
             </startOffsets>
             <endOffsets>
-              <option value="2107" />
+              <option value="2814" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="110" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Examples/Scripts/RuntimeShatterExample.cs</url>
-          <line>144</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Examples/Scripts/RuntimeShatterExample.cs" initialLine="144" containingFunctionPresentation="method 'RandomShatter'">
+          <url>file://$PROJECT_DIR$/Assets/Examples/Scripts/Editor/ShatterExampleEditor.cs</url>
+          <line>42</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Examples/Scripts/Editor/ShatterExampleEditor.cs" initialLine="42" containingFunctionPresentation="method 'OnInspectorGUI'">
             <startOffsets>
-              <option value="4220" />
+              <option value="1481" />
             </startOffsets>
             <endOffsets>
-              <option value="4257" />
+              <option value="1587" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="115" />
+          <option name="timeStamp" value="178" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/EzySlice/EzySlice/SlicerExtensions.cs</url>
+          <line>77</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/SlicerExtensions.cs" initialLine="77" containingFunctionPresentation="method 'SliceInstantiate'">
+            <startOffsets>
+              <option value="3258" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3337" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="186" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Examples/Scripts/ShatterExample.cs</url>
+          <line>26</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Examples/Scripts/ShatterExample.cs" initialLine="26" containingFunctionPresentation="method 'ShatterObject'">
+            <startOffsets>
+              <option value="968" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1003" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="189" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

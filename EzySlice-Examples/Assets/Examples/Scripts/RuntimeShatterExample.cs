@@ -24,33 +24,46 @@ public class RuntimeShatterExample : MonoBehaviour
 
     private SlicedHull ShatterObject(GameObject obj)
     {
-        const float oneOnSqrt2 = 0.7f; // just less than 1/sqrt(2) - should produce a cut through any mesh with a tight bounds
-
-        var col = obj.GetComponent<Collider>();
-        Debug.Assert(col);
-        var bounds = col.bounds;
+        var textureRegion = new TextureRegion(0.0f, 0.0f, 1.0f, 1.0f);
+        SlicedHull slicedHull;
 
         EzySlice.Plane plane;
         if (enableTestPlane && testPlane)
         {
-            plane = new EzySlice.Plane();
-            plane.Compute(testPlane);
+            slicedHull = obj.SliceInstantiate(
+                testPlane.transform.position,
+                testPlane.transform.up,
+                textureRegion,
+                crossSectionMaterial);
+
+            // plane.TransformInto(obj.transform);
+            // var p = testPlane.transform.position;//obj.transform.InverseTransformPoint(testPlane.transform.position);
+            // var n = obj.transform.InverseTransformVector(testPlane.transform.up);
+            // var m = n.magnitude;
+            // // n.Normalize();
+            // n = testPlane.transform.TransformVector(n);
+            // m = n.magnitude;
+            // n.Normalize();
+            // plane.Compute(p, n);
         }
         else
         {
-            plane = GetRandomPlane(bounds.center, bounds.extents * oneOnSqrt2);
+            var col = obj.GetComponent<Collider>();
+            Debug.Assert(col);
+            var objBounds = col.bounds;
+            const float oneOnSqrt2 = 0.7f; // just less than 1/sqrt(2) - should produce a cut through most meshes with a tight bounds
+            plane = GetRandomPlane(objBounds.center, objBounds.extents * oneOnSqrt2);
+            slicedHull = obj.SliceInstantiate(
+                plane,
+                textureRegion,
+                crossSectionMaterial);
+
+#if DEBUG
+            debugSphere = new BoundingSphere(objBounds.center, objBounds.extents.magnitude /* * oneOnSqrt2*/);
+            DebugExtension.DebugWireSphere(debugSphere.position, Color.white, debugSphere.radius, 2);
+#endif
         }
         
-        debugSphere = new BoundingSphere(bounds.center, bounds.extents.magnitude/* * oneOnSqrt2*/);
-        DebugExtension.DebugWireSphere(debugSphere.position, Color.white, debugSphere.radius, 2);
-
-        var textureRegion = new TextureRegion(0.0f, 0.0f, 1.0f, 1.0f);
-
-        var slicedHull = obj.SliceInstantiate(
-            plane,
-            textureRegion,
-            crossSectionMaterial);
-
         if (slicedHull is null)
         {
             Debug.Break();
@@ -72,6 +85,21 @@ public class RuntimeShatterExample : MonoBehaviour
     public void Explode()
     {
         int q = 0;
+    }
+
+    private void OnValidate()
+    {
+        if (testPlane)
+        {
+            if (enableTestPlane)
+            {
+                testPlane.SetActive(true);
+            }
+            else
+            {
+                testPlane.SetActive(false);
+            }
+        }
     }
 
     public void Gravity()

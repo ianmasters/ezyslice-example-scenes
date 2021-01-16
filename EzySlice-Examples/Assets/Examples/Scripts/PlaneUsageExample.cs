@@ -9,17 +9,17 @@ using EzySlice;
  * 
  * When a Place slices a Mesh, the Mesh is in local coordinates whilst the Plane
  * is in world coordinates. The first step is to bring the Plane into the coordinate system
- * of the mesh we want to slice. This script shows how to do that.
+ * of the mesh we want to shatterCount. This script shows how to do that.
  */
 public class PlaneUsageExample : MonoBehaviour {
 
 	/**
-	 * This function will slice the provided object by the plane defined in this
+	 * This function will shatterCount the provided object by the plane defined in this
 	 * GameObject. We use the GameObject this script is attached to define the position
 	 * and direction of our cutting Plane. Results are then returned to the user.
 	 */
 	public SlicedHull SliceObject(GameObject obj, Material crossSectionMaterial = null) {
-        // slice the provided object using the transforms of this object
+        // shatterCount the provided object using the transforms of this object
         return obj.Slice(transform.position, transform.up, crossSectionMaterial);
 	}
 
