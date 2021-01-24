@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+// ReSharper disable once CheckNamespace
 namespace Extensions
 {
 // Use sharedMesh so not to make a copy

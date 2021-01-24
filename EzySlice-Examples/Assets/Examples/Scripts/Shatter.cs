@@ -7,17 +7,23 @@ using Random = UnityEngine.Random;
 /**
  * Represents a really badly written shatter script! use for reference purposes only.
  */
-public class RuntimeShatterExample : MonoBehaviour
+// ReSharper disable once CheckNamespace
+public class Shatter : MonoBehaviour
 {
     public GameObject objectToShatter;
     public Material crossSectionMaterial;
+    public int shatterCount;
 
 #if DEBUG
     public bool enableTestPlane;
     public GameObject testPlane;
 #endif
 
-    // TODO: make private when debugging complete so it isn't serialized
+    private void Awake()
+    {
+        gameObject.SetActive(true);
+    }
+
     public List<GameObject> prevShatters = new List<GameObject>();
 
     private BoundingSphere debugSphere;
@@ -27,24 +33,14 @@ public class RuntimeShatterExample : MonoBehaviour
         var textureRegion = new TextureRegion(0.0f, 0.0f, 1.0f, 1.0f);
         SlicedHull slicedHull;
 
-        EzySlice.Plane plane;
         if (enableTestPlane && testPlane)
         {
+            var plane = new EzySlice.Plane(testPlane.transform.position, testPlane.transform.up);
+            plane.TransformInto(obj.transform);
             slicedHull = obj.SliceInstantiate(
-                testPlane.transform.position,
-                testPlane.transform.up,
+                plane,
                 textureRegion,
                 crossSectionMaterial);
-
-            // plane.TransformInto(obj.transform);
-            // var p = testPlane.transform.position;//obj.transform.InverseTransformPoint(testPlane.transform.position);
-            // var n = obj.transform.InverseTransformVector(testPlane.transform.up);
-            // var m = n.magnitude;
-            // // n.Normalize();
-            // n = testPlane.transform.TransformVector(n);
-            // m = n.magnitude;
-            // n.Normalize();
-            // plane.Compute(p, n);
         }
         else
         {
@@ -52,7 +48,7 @@ public class RuntimeShatterExample : MonoBehaviour
             Debug.Assert(col);
             var objBounds = col.bounds;
             const float oneOnSqrt2 = 0.7f; // just less than 1/sqrt(2) - should produce a cut through most meshes with a tight bounds
-            plane = GetRandomPlane(objBounds.center, objBounds.extents * oneOnSqrt2);
+            var plane = GetRandomPlane(objBounds.center, objBounds.extents * oneOnSqrt2);
             slicedHull = obj.SliceInstantiate(
                 plane,
                 textureRegion,
@@ -63,7 +59,7 @@ public class RuntimeShatterExample : MonoBehaviour
             DebugExtension.DebugWireSphere(debugSphere.position, Color.white, debugSphere.radius, 2);
 #endif
         }
-        
+
         if (slicedHull is null)
         {
             Debug.Break();
@@ -71,7 +67,7 @@ public class RuntimeShatterExample : MonoBehaviour
         return slicedHull;
     }
 
-    private static EzySlice.Plane GetRandomPlane(Vector3 positionOffset, Vector3 scaleOffset)
+    private static EzySlice.Plane GetRandomPlane(in Vector3 positionOffset, in Vector3 scale)
     {
         var randomPosition = Random.insideUnitSphere;
 
@@ -79,28 +75,23 @@ public class RuntimeShatterExample : MonoBehaviour
 
         var randomDirection = Random.insideUnitSphere.normalized;
 
-        return new EzySlice.Plane(randomPosition, randomDirection);
+        return new EzySlice.Plane(randomPosition, randomDirection, scale);
     }
 
     public void Explode()
     {
-        int q = 0;
+        // var q = 0;
     }
 
-    private void OnValidate()
+#if UNITY_EDITOR
+    public void OnValidate()
     {
         if (testPlane)
         {
-            if (enableTestPlane)
-            {
-                testPlane.SetActive(true);
-            }
-            else
-            {
-                testPlane.SetActive(false);
-            }
+            testPlane.SetActive(enableTestPlane);
         }
     }
+#endif
 
     public void Gravity()
     {
@@ -122,6 +113,7 @@ public class RuntimeShatterExample : MonoBehaviour
     public void RandomShatter()
     {
         GameObject objectToSplit = null;
+        prevShatters = new List<GameObject>();
 
         // First shatter
         if (prevShatters.Count == 0)
@@ -141,12 +133,12 @@ public class RuntimeShatterExample : MonoBehaviour
                     print($"RandomShatter from {objectToSplit.name}");
                     if (!objectToSplit.activeSelf)
                     {
-                        Debug.LogWarning("Tried to select an inactive shatter object");
+                        Debug.LogWarning("Tried to select an inactive shatter object", objectToSplit);
                     }
                 }
                 catch (Exception)
                 {
-                    var q = 0;
+                    // var q = 0;
                 }
             } while (objectToSplit is null || !objectToSplit.activeSelf);
         }
@@ -156,7 +148,7 @@ public class RuntimeShatterExample : MonoBehaviour
 #if DEBUG
         if (slicedHull is null)
         {
-            var q = 0;
+            // var q = 0;
         }
 #endif
 
@@ -164,14 +156,11 @@ public class RuntimeShatterExample : MonoBehaviour
         {
             Debug.Assert(slicedHull.HullMesh(0) || slicedHull.HullMesh(1), "There should only be an upper and/or lower hull");
 
-            var rbSource = objectToSplit.GetComponentInChildren<Rigidbody>();
-            // var colSource = objectToSplit.GetComponentInChildren<Collider>();
-            // var meshSource = objectToSplit.GetComponentInChildren<Mesh>();
-
             // add rigidbodies and colliders
-            var i = 0;
-            foreach (var shattered in slicedHull)
+            var rbSource = objectToSplit.GetComponentInChildren<Rigidbody>();
+            for (var i = 0; i < 2; ++i)
             {
+                var shattered = slicedHull.HullObject(i);
                 shattered.AddComponent<MeshCollider>().convex = true;
                 if (rbSource)
                 {
@@ -182,15 +171,17 @@ public class RuntimeShatterExample : MonoBehaviour
                     rb.isKinematic = rbSource.isKinematic;
                     rb.drag = rbSource.drag;
                     rb.angularDrag = rbSource.angularDrag;
-                    var volume = slicedHull.HullVolume(i);
-                    rb.mass = rbSource.mass * volume / slicedHull.sourceVolume;
+                    rb.mass = rbSource.mass * slicedHull.HullVolume(i) / slicedHull.SourceVolume;
                 }
 
                 prevShatters.Add(shattered);
-                ++i;
             }
-            // objectToSplit.SetActive(false);
-            Destroy(objectToSplit);
+
+            if (Application.isEditor)
+                DestroyImmediate(objectToSplit);
+            else
+                Destroy(objectToSplit);
+
             prevShatters.Remove(objectToSplit);
         }
     }

@@ -25,11 +25,10 @@
           <e p="Scripts" t="Include">
             <e p="Editor" t="Include">
               <e p="PlaneUsageExampleEditor.cs" t="Include" />
-              <e p="ShatterExampleEditor.cs" t="Include" />
+              <e p="ShatterEditor.cs" t="Include" />
             </e>
             <e p="PlaneUsageExample.cs" t="Include" />
-            <e p="RuntimeShatterExample.cs" t="Include" />
-            <e p="ShatterExample.cs" t="Include" />
+            <e p="Shatter.cs" t="Include" />
           </e>
         </e>
         <e p="EzySlice" t="Include">
