@@ -368,7 +368,7 @@ GameObject:
   - component: {fileID: 310616245}
   - component: {fileID: 310616246}
   m_Layer: 0
-  m_Name: ground
+  m_Name: wall collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -385,7 +385,7 @@ Transform:
   m_LocalPosition: {x: 46.306427, y: 2.5541153, z: -2.1145859}
   m_LocalScale: {x: 70, y: 1, z: 70}
   m_Children: []
-  m_Father: {fileID: 319977119}
+  m_Father: {fileID: 1800246256}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
 --- !u!65 &310616246
@@ -411,7 +411,7 @@ GameObject:
   m_Component:
   - component: {fileID: 319977119}
   m_Layer: 0
-  m_Name: box
+  m_Name: Insider Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -428,12 +428,8 @@ Transform:
   m_LocalPosition: {x: -11.306427, y: -2.5541153, z: 2.1145859}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 543398401}
-  - {fileID: 803866954}
-  - {fileID: 793525433}
-  - {fileID: 610115389}
-  - {fileID: 310616245}
   - {fileID: 1985300138}
+  - {fileID: 1800246256}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -448,7 +444,7 @@ GameObject:
   - component: {fileID: 543398401}
   - component: {fileID: 543398402}
   m_Layer: 0
-  m_Name: ground
+  m_Name: wall collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -465,7 +461,7 @@ Transform:
   m_LocalPosition: {x: 11.306427, y: 37.554115, z: -2.1145859}
   m_LocalScale: {x: 70, y: 1, z: 70}
   m_Children: []
-  m_Father: {fileID: 319977119}
+  m_Father: {fileID: 1800246256}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &543398402
@@ -564,8 +560,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: RuntimeShatterExample, Assembly-CSharp
+      - m_Target: {fileID: 1230965589}
+        m_TargetAssemblyTypeName: Shatter, Assembly-CSharp
         m_MethodName: RandomShatter
         m_Mode: 1
         m_Arguments:
@@ -625,7 +621,7 @@ GameObject:
   - component: {fileID: 610115389}
   - component: {fileID: 610115390}
   m_Layer: 0
-  m_Name: ground
+  m_Name: wall collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -642,7 +638,7 @@ Transform:
   m_LocalPosition: {x: -23.693573, y: 2.5541153, z: -2.1145859}
   m_LocalScale: {x: 70, y: 1, z: 70}
   m_Children: []
-  m_Father: {fileID: 319977119}
+  m_Father: {fileID: 1800246256}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
 --- !u!65 &610115390
@@ -927,7 +923,7 @@ Transform:
   m_LocalScale: {x: 15, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &705342425
 Rigidbody:
@@ -1116,7 +1112,7 @@ GameObject:
   - component: {fileID: 793525433}
   - component: {fileID: 793525434}
   m_Layer: 0
-  m_Name: ground
+  m_Name: wall collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1133,7 +1129,7 @@ Transform:
   m_LocalPosition: {x: 11.306427, y: 2.5541153, z: 32.885414}
   m_LocalScale: {x: 70, y: 1, z: 70.00003}
   m_Children: []
-  m_Father: {fileID: 319977119}
+  m_Father: {fileID: 1800246256}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!65 &793525434
@@ -1160,7 +1156,7 @@ GameObject:
   - component: {fileID: 803866954}
   - component: {fileID: 803866955}
   m_Layer: 0
-  m_Name: ground
+  m_Name: wall collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1177,7 +1173,7 @@ Transform:
   m_LocalPosition: {x: 11.306427, y: 2.5541153, z: -37.114586}
   m_LocalScale: {x: 70, y: 1, z: 70.00003}
   m_Children: []
-  m_Father: {fileID: 319977119}
+  m_Father: {fileID: 1800246256}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!65 &803866955
@@ -1204,35 +1200,13 @@ GameObject:
   - component: {fileID: 827606556}
   - component: {fileID: 827606555}
   - component: {fileID: 827606554}
-  - component: {fileID: 827606553}
   m_Layer: 0
   m_Name: TestPlane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &827606553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 827606552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fed9a144ebdc46bd845b2b75e2e1854, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToShatter: {fileID: 0}
-  crossSectionMaterial: {fileID: 2100000, guid: 2c0bb40fdf03144dd9be6d9db658f630,
-    type: 2}
-  shatterCount: 1
-  enableTestPlane: 1
-  testPlane: {fileID: 827606552}
-  prevShatters:
-  - {fileID: 0}
-  - {fileID: 0}
+  m_IsActive: 0
 --- !u!23 &827606554
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1295,7 +1269,7 @@ Transform:
   m_Children:
   - {fileID: 731693400}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: -45, y: -45, z: 0}
 --- !u!1 &1133113790
 GameObject:
@@ -1516,6 +1490,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1181640994}
   m_CullTransparentMesh: 1
+--- !u!1 &1230965588
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1230965590}
+  - component: {fileID: 1230965589}
+  m_Layer: 0
+  m_Name: Shatter Placeholder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1230965589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230965588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fed9a144ebdc46bd845b2b75e2e1854, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToShatter: {fileID: 705342420}
+  crossSectionMaterial: {fileID: 2100000, guid: 2c0bb40fdf03144dd9be6d9db658f630,
+    type: 2}
+  shatterCount: 1
+  enableTestPlane: 0
+  testPlane: {fileID: 827606552}
+  prevShatters: []
+--- !u!4 &1230965590
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230965588}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.6301467, y: -9.560637, z: -10.18294}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1565171055
 GameObject:
   m_ObjectHideFlags: 0
@@ -1805,8 +1829,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: RuntimeShatterExample, Assembly-CSharp
+      - m_Target: {fileID: 1230965589}
+        m_TargetAssemblyTypeName: Shatter, Assembly-CSharp
         m_MethodName: Gravity
         m_Mode: 1
         m_Arguments:
@@ -1855,6 +1879,41 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1620256070}
   m_CullTransparentMesh: 1
+--- !u!1 &1800246255
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1800246256}
+  m_Layer: 0
+  m_Name: Invisible Walls
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1800246256
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800246255}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 543398401}
+  - {fileID: 803866954}
+  - {fileID: 793525433}
+  - {fileID: 610115389}
+  - {fileID: 310616245}
+  m_Father: {fileID: 319977119}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1985300134
 GameObject:
   m_ObjectHideFlags: 0
@@ -1868,7 +1927,7 @@ GameObject:
   - component: {fileID: 1985300136}
   - component: {fileID: 1985300135}
   m_Layer: 0
-  m_Name: ground mesh
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1948,7 +2007,7 @@ Transform:
   m_LocalScale: {x: 70, y: 1, z: 70}
   m_Children: []
   m_Father: {fileID: 319977119}
-  m_RootOrder: 5
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2020458174
 GameObject:

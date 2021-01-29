@@ -46,7 +46,10 @@ public class ShatterEditor : Editor
             Undo.RegisterFullObjectHierarchyUndo(script.objectToShatter, undoName);
 
             // Perform the action
-            script.RandomShatter();
+            for (var i = 0; i < script.shatterCount; ++i)
+            {
+                script.RandomShatter();
+            }
 
             foreach (var o in script.prevShatters)
             {

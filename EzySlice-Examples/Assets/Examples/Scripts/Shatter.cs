@@ -177,10 +177,10 @@ public class Shatter : MonoBehaviour
                 prevShatters.Add(shattered);
             }
 
-            if (Application.isEditor)
-                DestroyImmediate(objectToSplit);
-            else
+            if (Application.isPlaying)
                 Destroy(objectToSplit);
+            else
+                DestroyImmediate(objectToSplit);
 
             prevShatters.Remove(objectToSplit);
         }
