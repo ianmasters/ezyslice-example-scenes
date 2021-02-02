@@ -51,7 +51,7 @@ public class ShatterEditor : Editor
                 script.RandomShatter();
             }
 
-            foreach (var o in script.prevShatters)
+            foreach (var o in script.Shards)
             {
                 Undo.RegisterCreatedObjectUndo(o, undoName);
             }

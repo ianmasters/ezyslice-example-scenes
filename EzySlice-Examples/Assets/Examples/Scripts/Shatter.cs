@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using EzySlice;
+using UnityEditor;
 using Random = UnityEngine.Random;
 
 /**
@@ -19,12 +19,13 @@ public class Shatter : MonoBehaviour
     public GameObject testPlane;
 #endif
 
+    public List<GameObject> Shards { get; private set; }
+
     private void Awake()
     {
         gameObject.SetActive(true);
+        // Shards = new List<GameObject>();
     }
-
-    public List<GameObject> prevShatters = new List<GameObject>();
 
     private BoundingSphere debugSphere;
 
@@ -37,6 +38,12 @@ public class Shatter : MonoBehaviour
         {
             var plane = new EzySlice.Plane(testPlane.transform.position, testPlane.transform.up);
             plane.TransformInto(obj.transform);
+
+            // plane = new EzySlice.Plane(
+            //     obj.transform.InverseTransformPoint(testPlane.transform.position),
+            //     obj.transform.InverseTransformDirection(testPlane.transform.up)
+            // );
+
             slicedHull = obj.SliceInstantiate(
                 plane,
                 textureRegion,
@@ -95,10 +102,10 @@ public class Shatter : MonoBehaviour
 
     public void Gravity()
     {
-        if (prevShatters.Count > 0)
+        if (Shards.Count > 0)
         {
-            var g = !prevShatters[0].GetComponent<Rigidbody>().useGravity;
-            foreach (var s in prevShatters)
+            var g = !Shards[0].GetComponent<Rigidbody>().useGravity;
+            foreach (var s in Shards)
             {
                 s.GetComponent<Rigidbody>().useGravity = g;
             }
@@ -110,37 +117,30 @@ public class Shatter : MonoBehaviour
         }
     }
 
+    // This method can be compounded to iteratively shatter previous shatters
     public void RandomShatter()
     {
-        GameObject objectToSplit = null;
-        prevShatters = new List<GameObject>();
+        GameObject objectToSplit;
 
-        // First shatter
-        if (prevShatters.Count == 0)
+        if (Shards is null || !Application.isPlaying)
         {
+            // First shatter
+            Shards = new List<GameObject>();
             objectToSplit = objectToShatter;
-            // objectToShatter = null;
             print($"RandomShatter {objectToSplit.name}");
         }
         else
         {
-            // otherwise, shatter the previous shattered objects, randomly picked
+            // Otherwise, shatter the previous shards, randomly picked
             do
             {
-                try
+                objectToSplit = Shards[Random.Range(0, Shards.Count - 1)];
+                print($"RandomShatter from {objectToSplit.name}");
+                if (!objectToSplit.activeSelf)
                 {
-                    objectToSplit = prevShatters[Random.Range(0, prevShatters.Count - 1)];
-                    print($"RandomShatter from {objectToSplit.name}");
-                    if (!objectToSplit.activeSelf)
-                    {
-                        Debug.LogWarning("Tried to select an inactive shatter object", objectToSplit);
-                    }
+                    Debug.LogWarning("Tried to select an inactive shatter object", objectToSplit);
                 }
-                catch (Exception)
-                {
-                    // var q = 0;
-                }
-            } while (objectToSplit is null || !objectToSplit.activeSelf);
+            } while (!objectToSplit || !objectToSplit.activeSelf);
         }
 
         var slicedHull = ShatterObject(objectToSplit);
@@ -174,7 +174,7 @@ public class Shatter : MonoBehaviour
                     rb.mass = rbSource.mass * slicedHull.HullVolume(i) / slicedHull.SourceVolume;
                 }
 
-                prevShatters.Add(shattered);
+                Shards.Add(shattered);
             }
 
             if (Application.isPlaying)
@@ -182,7 +182,7 @@ public class Shatter : MonoBehaviour
             else
                 DestroyImmediate(objectToSplit);
 
-            prevShatters.Remove(objectToSplit);
+            Shards.Remove(objectToSplit);
         }
     }
 }
