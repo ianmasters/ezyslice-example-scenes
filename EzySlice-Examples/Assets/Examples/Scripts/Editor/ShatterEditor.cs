@@ -1,5 +1,6 @@
 using UnityEditor;
 using UnityEngine;
+using Object = UnityEngine.Object;
 
 namespace Examples.Scripts.Editor
 {
@@ -51,6 +52,9 @@ namespace Examples.Scripts.Editor
                 {
                     script.RandomShatter();
                 }
+
+                var objects = System.Array.ConvertAll(script.Shards.ToArray(), o => (Object)o);
+                Selection.objects = objects;
 
                 foreach (var o in script.Shards)
                 {
