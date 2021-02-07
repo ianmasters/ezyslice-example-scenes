@@ -2,34 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbc40dfa-e447-425e-86e5-847cc5079d6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/UserSettings/Search.index" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/UserSettings/Search.settings" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/workspace.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/Debug/Textures/SampleCrossMaterial.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Examples/Debug/Textures/SampleCrossMaterial.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Examples/Debug/Runtime/RuntimeShatterExample.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/Debug/Runtime/RuntimeShatterExample.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/Debug/Runtime/RuntimeShatterExample/LightingData.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/Debug/Runtime/RuntimeShatterExample/LightingData.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/Debug/Runtime/RuntimeShatterExample/ReflectionProbe-0.exr" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/Debug/Runtime/RuntimeShatterExample/ReflectionProbe-0.exr.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/Debug/Textures/Ground.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/Debug/Textures/Ground.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/Debug/Textures/SampleCrossMaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/Debug/Textures/SampleCrossMaterial.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/Debug/Textures/SampleUVMaterial.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/Debug/Textures/SampleUVMaterial.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/Debug/Textures/TestPlane.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/Debug/Textures/TestPlane.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/Scripts/Editor/PlaneUsageExampleEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/Scripts/Editor/PlaneUsageExampleEditor.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Examples/Scripts/Editor/ShatterEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/Scripts/Editor/ShatterEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/Scripts/PlaneUsageExample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/Scripts/PlaneUsageExample.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Examples/Scripts/Shatter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/Scripts/Shatter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/EzySlice" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EzySlice" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Framework/Plane.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Framework/Plane.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Slicer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Slicer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/SlicerExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/SlicerExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Sample Cross Section.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/Debug/Textures/SampleUVMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Sample Cross Section.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/Debug/Textures/SampleUVMaterial.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineAsset_Renderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineAsset_Renderer.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/MeshEx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MeshEx.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shaders/MeshEx.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MeshEx.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/PackageManagerSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,11 +46,14 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file:///Applications/Unity/Hub/Editor/2020.2.2f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/33061422-5C16-498F-8301-BBDAF5D693A7/06/0030dafc/Debug.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B8BC167D-E93E-4CD7-ACB3-FCE533DC4CBC/0d/e5b1e938/Mesh.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C881E71-2F79-461D-96F9-95658A2D07FF/27/255861db/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C881E71-2F79-461D-96F9-95658A2D07FF/95/609cd2ca/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9577AC7A-62EF-4317-9789-031239BA8798/dd/39d7c031/Array.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B54C5F8C-BD8A-46C6-B18A-2B3EF785AD6D/a4/0ea79f66/String.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/913E4BB3-45CE-431F-BA1E-37D268006ABF/1e/14385747/InspectorElement.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B54C5F8C-BD8A-46C6-B18A-2B3EF785AD6D/a5/460157fe/Buffer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9577AC7A-62EF-4317-9789-031239BA8798/d0/69b66dcc/Random.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9577AC7A-62EF-4317-9789-031239BA8798/dd/cc3b36ba/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C881E71-2F79-461D-96F9-95658A2D07FF/e0/8e2dc70d/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
@@ -67,6 +67,7 @@
     <setting file="file:///Applications/Unity/Hub/Editor/2020.2.2f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C881E71-2F79-461D-96F9-95658A2D07FF/d7/64c1e2f6/InvokableCall.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/EzySlice/EzySlice/Slicer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/33061422-5C16-498F-8301-BBDAF5D693A7/be/ed5b962e/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DebugDrawingExtension/DebugExtension.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C881E71-2F79-461D-96F9-95658A2D07FF/d0/1e7d4de7/Debug.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
@@ -76,9 +77,29 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B8BC167D-E93E-4CD7-ACB3-FCE533DC4CBC/d0/d69ee5ac/InvokableCall.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B8BC167D-E93E-4CD7-ACB3-FCE533DC4CBC/52/8310817d/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
+  <component name="IdeDocumentHistory">
+    <changedPaths>
+      <option value="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Slicer.cs" />
+      <option value="$PROJECT_DIR$/Assets/EzySlice/EzySlice/SlicerExtensions.cs" />
+      <option value="$PROJECT_DIR$/Assets/Examples/Scripts/Editor/ShatterEditor.cs" />
+      <option value="$PROJECT_DIR$/Assets/Examples/Scripts/Editor/PlaneUsageExampleEditor.cs" />
+      <option value="$PROJECT_DIR$/Assets/Examples/Scripts/Shatter.cs" />
+      <option value="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Framework/Plane.cs" />
+    </changedPaths>
+  </component>
+  <component name="ProjectId" id="1nwOTWpRsTPGnUewD7NiRcNHXcG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
-    <property name="XThreadsFramesViewSplitterKey" value="0.37003058" />
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="XThreadsFramesViewSplitterKey" value="0.47698745" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -90,41 +111,30 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="75903">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="75903" />
       <option name="selectedOptions">
         <list />
       </option>
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bbc40dfa-e447-425e-86e5-847cc5079d6d" name="Default Changelist" comment="" />
+      <created>1612297697397</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1612297697397</updated>
+    </task>
     <servers />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
-  <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/EzySlice/EzySlice/Framework/Intersector.cs</url>
-          <line>67</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Framework/Intersector.cs" initialLine="67" containingFunctionPresentation="method 'Intersect'">
-            <startOffsets>
-              <option value="2347" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2362" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="285" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

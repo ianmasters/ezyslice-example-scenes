@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Examples.Scripts;
 using UnityEngine;
 using UnityEditor;
 using EzySlice;
@@ -18,7 +19,7 @@ public class PlaneUsageExampleEditor : Editor {
 
 		source = (GameObject) EditorGUILayout.ObjectField(source, typeof(GameObject), true);
 
-		if (source == null) {
+		if (!source) {
 			EditorGUILayout.LabelField("Add a GameObject to Slice.");
 
 			return;

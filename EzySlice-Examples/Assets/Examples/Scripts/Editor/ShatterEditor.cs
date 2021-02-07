@@ -1,67 +1,69 @@
-using UnityEngine;
 using UnityEditor;
+using UnityEngine;
 
-/**
+namespace Examples.Scripts.Editor
+{
+    /**
  * This is a simple Editor helper script for rapid testing/prototyping! 
  */
-[CustomEditor(typeof(Shatter))]
-// ReSharper disable once CheckNamespace
-public class ShatterEditor : Editor
-{
-    public override void OnInspectorGUI()
+    [CustomEditor(typeof(Shatter))]
+    public class ShatterEditor : UnityEditor.Editor
     {
-        Shatter script = (Shatter)target;
-
-        script.objectToShatter = (GameObject)EditorGUILayout.ObjectField("Object to Shatter", script.objectToShatter, typeof(GameObject), true);
-
-        if (!script.objectToShatter)
+        public override void OnInspectorGUI()
         {
-            EditorGUILayout.LabelField("Add a GameObject to Shatter.");
-            return;
-        }
+            Shatter script = (Shatter)target;
 
-        if (!script.objectToShatter.activeInHierarchy)
-        {
-            EditorGUILayout.LabelField("Object to slice is Hidden. Cannot Slice.");
-            return;
-        }
+            script.objectToShatter = (GameObject)EditorGUILayout.ObjectField("Object to Shatter", script.objectToShatter, typeof(GameObject), true);
 
-        script.crossSectionMaterial = (Material)EditorGUILayout.ObjectField("Cross Section Material", script.crossSectionMaterial, typeof(Material), false);
-
-        script.enableTestPlane = EditorGUILayout.Toggle("Enable Test Plane", script.enableTestPlane);
-        if (script.enableTestPlane)
-            script.testPlane = (GameObject)EditorGUILayout.ObjectField("Test Plane", script.testPlane, typeof(GameObject), true);
-        else
-            script.shatterCount = EditorGUILayout.IntSlider("Shatter Count", script.shatterCount, 1, 20);
-
-        if (GUILayout.Button($"\n{(script.enableTestPlane ? "Slice" : "Shatter")} {script.objectToShatter.name}\n"))
-        {
-            const string undoName = "Shatter";
-
-            // Don't think this is required as the mouse down or some other event should have incremented it.
-            // This stuff is extremely unclear from any of the documentation as to when you should need to create an undo group.
-            Undo.IncrementCurrentGroup();
-            Undo.SetCurrentGroupName(undoName);
-
-            Undo.RegisterFullObjectHierarchyUndo(script.objectToShatter, undoName);
-
-            // Perform the action
-            for (var i = 0; i < script.shatterCount; ++i)
+            if (!script.objectToShatter)
             {
-                script.RandomShatter();
+                EditorGUILayout.LabelField("Add a GameObject to Shatter.");
+                return;
             }
 
-            foreach (var o in script.Shards)
+            if (!script.objectToShatter.activeInHierarchy)
             {
-                Undo.RegisterCreatedObjectUndo(o, undoName);
+                EditorGUILayout.LabelField("Object to slice is Hidden. Cannot Slice.");
+                return;
             }
 
-            Undo.CollapseUndoOperations(Undo.GetCurrentGroup());
-        }
+            script.crossSectionMaterial = (Material)EditorGUILayout.ObjectField("Cross Section Material", script.crossSectionMaterial, typeof(Material), false);
 
-        if (GUI.changed) // once you have an editor script apparently you are responsible for doing this
-        {
-            script.OnValidate();
+            script.enableTestPlane = EditorGUILayout.Toggle("Enable Test Plane", script.enableTestPlane);
+            if (script.enableTestPlane)
+                script.testPlane = (GameObject)EditorGUILayout.ObjectField("Test Plane", script.testPlane, typeof(GameObject), true);
+            else
+                script.shatterCount = EditorGUILayout.IntSlider("Shatter Count", script.shatterCount, 1, 20);
+
+            if (GUILayout.Button($"\n{(script.enableTestPlane ? "Slice" : "Shatter")} {script.objectToShatter.name}\n"))
+            {
+                const string undoName = "Shatter";
+
+                // Don't think this is required as the mouse down or some other event should have incremented it.
+                // This stuff is extremely unclear from any of the documentation as to when you should need to create an undo group.
+                Undo.IncrementCurrentGroup();
+                Undo.SetCurrentGroupName(undoName);
+
+                Undo.RegisterFullObjectHierarchyUndo(script.objectToShatter, undoName);
+
+                // Perform the action
+                for (var i = 0; i < script.shatterCount; ++i)
+                {
+                    script.RandomShatter();
+                }
+
+                foreach (var o in script.Shards)
+                {
+                    Undo.RegisterCreatedObjectUndo(o, undoName);
+                }
+
+                Undo.CollapseUndoOperations(Undo.GetCurrentGroup());
+            }
+
+            if (GUI.changed) // once you have an editor script apparently you are responsible for doing this
+            {
+                script.OnValidate();
+            }
         }
     }
 }
