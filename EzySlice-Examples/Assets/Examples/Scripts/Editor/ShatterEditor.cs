@@ -36,6 +36,7 @@ namespace Examples.Scripts.Editor
             else
                 script.shatterCount = EditorGUILayout.IntSlider("Shatter Count", script.shatterCount, 1, 20);
 
+            GUI.backgroundColor = Color.yellow;
             if (GUILayout.Button($"\n{(script.enableTestPlane ? "Slice" : "Shatter")} {script.objectToShatter.name}\n"))
             {
                 const string undoName = "Shatter";

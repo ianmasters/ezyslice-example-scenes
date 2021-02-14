@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbc40dfa-e447-425e-86e5-847cc5079d6d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Examples/Debug/Runtime/RuntimeShatterExample.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/Debug/Runtime/RuntimeShatterExample.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Examples/Scripts/Editor/ShatterEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/Scripts/Editor/ShatterEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EzySlice" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EzySlice" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Framework/Plane.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Framework/Plane.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Search.settings" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Search.settings" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/SlicerExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/SlicerExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,7 +20,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Assets/EzySlice" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -25,6 +31,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TransformEx.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file:///Applications/Unity/Hub/Editor/2020.2.2f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/33061422-5C16-498F-8301-BBDAF5D693A7/06/0030dafc/Debug.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B8BC167D-E93E-4CD7-ACB3-FCE533DC4CBC/0d/e5b1e938/Mesh.cs" root0="SKIP_HIGHLIGHTING" />
@@ -51,6 +58,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/DebugDrawingExtension/DebugExtension.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C881E71-2F79-461D-96F9-95658A2D07FF/d0/1e7d4de7/Debug.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DB279785-10F3-4917-A47C-8EBE498A6EA2/66/6f8ce4dc/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file:///Applications/Unity/Hub/Editor/2020.2.2f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C881E71-2F79-461D-96F9-95658A2D07FF/e7/ac6398dc/Random.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/63582776-4962-4670-81A3-96D130631DF1/b2/550d1263/Undo.cs" root0="SKIP_HIGHLIGHTING" />
@@ -59,12 +67,13 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/EzySlice/EzySlice/SlicerExtensions.cs" />
       <option value="$PROJECT_DIR$/Assets/Examples/Scripts/Editor/PlaneUsageExampleEditor.cs" />
       <option value="$PROJECT_DIR$/Assets/Examples/Scripts/Shatter.cs" />
       <option value="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Slicer.cs" />
-      <option value="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Framework/Plane.cs" />
       <option value="$PROJECT_DIR$/Assets/Examples/Scripts/Editor/ShatterEditor.cs" />
+      <option value="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Framework/Plane.cs" />
+      <option value="$PROJECT_DIR$/Assets/EzySlice/EzySlice/SlicerExtensions.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/TransformEx.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nwOTWpRsTPGnUewD7NiRcNHXcG" />
@@ -75,6 +84,9 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3499268" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -91,10 +103,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="75903">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="51526">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="75903" />
+      <option name="pid" value="51526" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -116,5 +128,24 @@
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Examples/Scripts/Shatter.cs</url>
+          <line>47</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Examples/Scripts/Shatter.cs" initialLine="47" containingFunctionPresentation="method 'ShatterObject'">
+            <startOffsets>
+              <option value="1408" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1547" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

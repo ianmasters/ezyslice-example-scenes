@@ -48,7 +48,9 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="MatrixEx.cs" t="Include" />
           <e p="MeshEx.cs" t="Include" />
+          <e p="TransformEx.cs" t="Include" />
         </e>
       </e>
       <e p="EzySlice-Examples.sln" t="IncludeFlat" />
