@@ -2,28 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbc40dfa-e447-425e-86e5-847cc5079d6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlaneEx.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlaneEx.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/Lighting Settings.lighting" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Settings/Lighting Settings.lighting.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Examples/Debug/Runtime/RuntimeShatterExample.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/Debug/Runtime/RuntimeShatterExample.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/Debug/Scripts/IntersectionDebug.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/Debug/Scripts/IntersectionDebug.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/Scripts/PlaneUsageExample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/Scripts/PlaneUsageExample.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/Scripts/Shatter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/Scripts/Shatter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EzySlice" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EzySlice" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Framework/Intersector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Framework/Intersector.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Framework/Plane.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Framework/Plane.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/SlicedHull.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/SlicedHull.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Slicer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Slicer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/SlicerExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/SlicerExtensions.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Cutting Plane.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Cutting Plane.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TransformEx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TransformEx.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineAsset.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineAsset_Renderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineAsset_Renderer.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MeshEx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MeshEx.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,12 +69,14 @@
       <option value="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Framework/Plane.cs" />
       <option value="$PROJECT_DIR$/Assets/Examples/Debug/Scripts/IntersectionDebug.cs" />
       <option value="$PROJECT_DIR$/Assets/Examples/Scripts/PlaneUsageExample.cs" />
-      <option value="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Slicer.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlaneEx.cs" />
       <option value="$PROJECT_DIR$/Assets/Examples/Scripts/Shatter.cs" />
       <option value="$PROJECT_DIR$/Assets/EzySlice/EzySlice/SlicerExtensions.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/TransformEx.cs" />
       <option value="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Framework/Intersector.cs" />
+      <option value="$PROJECT_DIR$/Assets/EzySlice/EzySlice/SlicedHull.cs" />
+      <option value="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Slicer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MeshEx.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nwOTWpRsTPGnUewD7NiRcNHXcG" />
@@ -121,10 +106,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="91571">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="76998">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="91571" />
+      <option name="pid" value="76998" />
       <option name="selectedOptions">
         <list />
       </option>

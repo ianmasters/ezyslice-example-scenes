@@ -3,13 +3,13 @@
 // ReSharper disable once CheckNamespace
 namespace Extensions
 {
-// Use sharedMesh so not to make a copy
+    // Use sharedMesh so not to make a copy
     public static class MeshEx
     {
         // Use sharedMesh so not to make a copy
-        public static float CalculateVolume(this Mesh mesh, in Vector3[] vertices, in Vector3 scale)
+        public static float CalculateVolume(this Mesh mesh, in Vector3[] vertices)
         {
-            var volume = VolumeOfMesh(mesh, vertices, scale);
+            var volume = VolumeOfMesh(mesh, vertices);
             // Debug.Log($"The volume of the mesh is {volume}");
             return volume;
         }
@@ -26,7 +26,7 @@ namespace Extensions
             return 0.166666666666667f * (v231 - v321 + v312 - v132 - v213 + v123);
         }
 
-        private static float VolumeOfMesh(in Mesh mesh, in Vector3[] vertices, in Vector3 scale)
+        private static float VolumeOfMesh(in Mesh mesh, in Vector3[] vertices)
         {
             Debug.Assert(mesh, $"No mesh to operate on with VolumeOfMesh");
             var volume = 0f;
@@ -34,9 +34,9 @@ namespace Extensions
             for (var i = 0; i < triangles.Length; i += 3)
             {
                 volume += SignedVolumeOfTriangle(
-                    Vector3.Scale(vertices[triangles[i]], scale),
-                    Vector3.Scale(vertices[triangles[i + 1]], scale),
-                    Vector3.Scale(vertices[triangles[i + 2]], scale));
+                    vertices[triangles[i]],
+                    vertices[triangles[i + 1]],
+                    vertices[triangles[i + 2]]);
             }
             return Mathf.Abs(volume);
         }
