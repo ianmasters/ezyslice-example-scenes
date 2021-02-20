@@ -23,24 +23,22 @@ namespace Examples.Scripts
             return obj.Slice(transform.position, transform.up, crossSectionMaterial);
         }
 
-#if UNITY_EDITOR
+#if __UNITY_EDITOR
         /**
 	 * This is for Visual debugging purposes in the editor 
 	 */
         public void OnDrawGizmos() {
-            EzySlice.Plane cuttingPlane = new EzySlice.Plane();
 
             // the plane will be set to the same coordinates as the object that this
             // script is attached to
             // NOTE -> Debug Gizmo drawing only works if we pass the transform
-            cuttingPlane.Compute(transform);
+            var cuttingPlane = new Plane(transform.up, transform.position);
 
             // draw gizmos for the plane
             // NOTE -> Debug Gizmo drawing is ONLY available in editor mode. Do NOT try
             // to run this in the final build or you'll get crashes (most likey)
             cuttingPlane.OnDebugDraw();
         }
-
 #endif
     }
 }

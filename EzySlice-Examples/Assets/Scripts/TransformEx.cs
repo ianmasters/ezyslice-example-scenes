@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Runtime.InteropServices.ComTypes;
 using UnityEngine;
 using static UnityEngine.Object;
 
@@ -86,7 +87,7 @@ public static class TransformEx
     public static void SetWorldFromMatrix(this Transform transform, Matrix4x4 matrix)
     {
         var scale = matrix.ExtractScale(); // world scale
-        if(transform.parent) scale = transform.parent.InverseTransformVector(scale); // scale into local space
+        if (transform.parent) scale = transform.parent.InverseTransformVector(scale); // scale into local space
         // Assert.AreApproximatelyEqual(1, localScale.x);
         // Assert.AreApproximatelyEqual(1, localScale.y);
         // Assert.AreApproximatelyEqual(1, localScale.z);
@@ -154,26 +155,26 @@ public static class TransformEx
 //    {
 //    }
 
-    public static Bounds TransformBounds( this Transform transform, Bounds localBounds )
+    public static Bounds TransformBounds(this Transform transform, Bounds localBounds)
     {
         var center = transform.TransformPoint(localBounds.center);
- 
+
         // transform the local extents' axes
         var extents = localBounds.extents;
         var axisX = transform.TransformVector(extents.x, 0, 0);
         var axisY = transform.TransformVector(0, extents.y, 0);
         var axisZ = transform.TransformVector(0, 0, extents.z);
-        
+
         // TODO checking
         var e = transform.TransformVector(extents);
         Debug.Assert(e == new Vector3(axisX.magnitude, axisY.magnitude, axisZ.magnitude));
- 
+
         // sum their absolute value to get the world extents
         extents.x = Mathf.Abs(axisX.x) + Mathf.Abs(axisY.x) + Mathf.Abs(axisZ.x);
         extents.y = Mathf.Abs(axisX.y) + Mathf.Abs(axisY.y) + Mathf.Abs(axisZ.y);
         extents.z = Mathf.Abs(axisX.z) + Mathf.Abs(axisY.z) + Mathf.Abs(axisZ.z);
- 
-        return new Bounds { center = center, extents = extents };
+
+        return new Bounds {center = center, extents = extents};
     }
 
     public static void DestroyGameObjects(this Transform transform, bool recursive)
@@ -188,8 +189,37 @@ public static class TransformEx
         Destroy(transform.gameObject);
     }
 
-    // public static Plane InverseTransformPlane(this Transform transform, Plane plane)
-    // {
-    //     return plane;
-    // }
+    public static Plane InverseTransformPlane(this Transform transform, in Plane plane)
+    {
+#if Q
+        var m = transform.localToWorldMatrix;
+        var n3 = plane.normal;
+        var p3 = n3 * plane.distance;
+        var n = m.inverse.transpose * new Vector4(n3.x, n3.y, n3.z, 0);
+        var p = m * new Vector4(p3.x, p3.y, p3.z, 1);
+        // n = n.normalized;
+        return new Plane(n, Vector3.Dot(plane.normal, p));
+#elif Q
+        var p = plane.normal * -plane.distance;
+        p = transform.InverseTransformPoint(p);
+        var n = transform.InverseTransformVector(plane.normal);
+        var q = new Plane(n, p);
+        
+        var m = transform.localToWorldMatrix.inverse.transpose;
+        var p4 = new Vector4(plane.normal.x, plane.normal.y, plane.normal.z, -plane.distance);
+        p4 = m * p4;
+        n = new Vector3(p.x, p.y, p.z); //.normalized;
+        var pos = plane.normal * -plane.distance;
+        // pos = transform.InverseTransformPoint(pos);
+        var q2 = new Plane(n, pos);
+        return p4;
+#else
+        var p = plane.normal * -plane.distance;
+        p = transform.InverseTransformPoint(p);
+        var n = transform.InverseTransformDirection(plane.normal);
+        n.Scale(transform.lossyScale);
+        var pl = new Plane(n, p);
+        return pl;
+#endif
+    }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using EzySlice;
 
+#if EZY_PLANE
 /**
  * For debugging purposes ONLY.  
  */
@@ -18,7 +19,7 @@ public class IntersectionDebug : MonoBehaviour {
 			return;
 		}
 
-		Triangle newTri = new Triangle(triPisitionA.transform.position, triPositionB.transform.position, triPositionC.transform.position);
+		var newTri = new Triangle(triPisitionA.transform.position, triPositionB.transform.position, triPositionC.transform.position);
 		EzySlice.Plane newPlane = new EzySlice.Plane();
 		newPlane.Compute(plane);
 
@@ -34,3 +35,4 @@ public class IntersectionDebug : MonoBehaviour {
 		}
 	}
 }
+#endif

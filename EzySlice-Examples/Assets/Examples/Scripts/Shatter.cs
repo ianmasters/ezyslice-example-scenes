@@ -37,8 +37,7 @@ namespace Examples.Scripts
             if (enableTestPlane && testPlane)
             {
 #if !Q
-                var plane = new EzySlice.Plane(testPlane.transform.position, testPlane.transform.up);
-                // plane.TransformInto(obj.transform);
+                var plane = new Plane(testPlane.transform.up, testPlane.transform.position);
 #else
                 var plane = new EzySlice.Plane(
                     obj.transform.InverseTransformPoint(testPlane.transform.position),
@@ -75,7 +74,7 @@ namespace Examples.Scripts
             return slicedHull;
         }
 
-        private static EzySlice.Plane GetRandomPlane(in Vector3 positionOffset, in Vector3 scale)
+        private static Plane GetRandomPlane(in Vector3 positionOffset, in Vector3 scale)
         {
             var randomPosition = Random.insideUnitSphere;
 
@@ -83,7 +82,7 @@ namespace Examples.Scripts
 
             var randomDirection = Random.insideUnitSphere.normalized;
 
-            return new EzySlice.Plane(randomPosition, randomDirection, scale);
+            return new Plane(randomDirection, randomPosition);
         }
 
         public void Explode()
@@ -146,45 +145,38 @@ namespace Examples.Scripts
 
             var slicedHull = ShatterObject(objectToSplit);
 
-#if DEBUG
-            if (slicedHull is null)
-            {
-                // var q = 0;
-            }
-#endif
+            if (slicedHull == null)
+                return;
 
-            if (slicedHull != null)
-            {
-                Debug.Assert(slicedHull.HullMesh(0) || slicedHull.HullMesh(1), "There should only be an upper and/or lower hull");
+            Debug.Assert(slicedHull.HullMesh(0) && slicedHull.HullMesh(1), "There should be an upper and lower hull");
 
-                // add rigidbodies and colliders
-                var rbSource = objectToSplit.GetComponentInChildren<Rigidbody>();
-                for (var i = 0; i < 2; ++i)
+            // add rigidbodies and colliders
+            var rbSource = objectToSplit.GetComponentInChildren<Rigidbody>();
+            for (var i = 0; i < 2; ++i)
+            {
+                var shattered = slicedHull.HullObject(i);
+                shattered.AddComponent<MeshCollider>().convex = true;
+                if (rbSource)
                 {
-                    var shattered = slicedHull.HullObject(i);
-                    shattered.AddComponent<MeshCollider>().convex = true;
-                    if (rbSource)
-                    {
-                        var rb = shattered.AddComponent<Rigidbody>();
-                        rb.velocity = rbSource.velocity;
-                        rb.angularVelocity = rbSource.angularVelocity;
-                        rb.useGravity = rbSource.useGravity;
-                        rb.isKinematic = rbSource.isKinematic;
-                        rb.drag = rbSource.drag;
-                        rb.angularDrag = rbSource.angularDrag;
-                        rb.mass = rbSource.mass * slicedHull.HullVolume(i) / slicedHull.SourceVolume;
-                    }
-
-                    Shards.Add(shattered);
+                    var rb = shattered.AddComponent<Rigidbody>();
+                    rb.velocity = rbSource.velocity;
+                    rb.angularVelocity = rbSource.angularVelocity;
+                    rb.useGravity = rbSource.useGravity;
+                    rb.isKinematic = rbSource.isKinematic;
+                    rb.drag = rbSource.drag;
+                    rb.angularDrag = rbSource.angularDrag;
+                    rb.mass = rbSource.mass * slicedHull.HullVolume(i) / slicedHull.SourceVolume;
                 }
 
-                if (Application.isPlaying)
-                    Destroy(objectToSplit);
-                else
-                    DestroyImmediate(objectToSplit);
-
-                Shards.Remove(objectToSplit);
+                Shards.Add(shattered);
             }
+
+            if (Application.isPlaying)
+                Destroy(objectToSplit);
+            else
+                DestroyImmediate(objectToSplit);
+
+            Shards.Remove(objectToSplit);
         }
     }
 }

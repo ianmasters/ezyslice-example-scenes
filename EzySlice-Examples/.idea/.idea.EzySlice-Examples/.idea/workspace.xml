@@ -2,14 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bbc40dfa-e447-425e-86e5-847cc5079d6d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlaneEx.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/PlaneEx.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Settings/Lighting Settings.lighting" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Settings/Lighting Settings.lighting.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.EzySlice-Examples/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Examples/Debug/Runtime/RuntimeShatterExample.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/Debug/Runtime/RuntimeShatterExample.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Examples/Scripts/Editor/ShatterEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/Scripts/Editor/ShatterEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/Debug/Scripts/IntersectionDebug.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/Debug/Scripts/IntersectionDebug.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/Scripts/PlaneUsageExample.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/Scripts/PlaneUsageExample.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Examples/Scripts/Shatter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Examples/Scripts/Shatter.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/EzySlice" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EzySlice" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Framework/Intersector.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Framework/Intersector.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Framework/Plane.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Framework/Plane.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Slicer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Slicer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/SlicerExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EzySlice/EzySlice/SlicerExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Cutting Plane.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Cutting Plane.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TransformEx.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TransformEx.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineAsset.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineAsset_Renderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineAsset_Renderer.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
@@ -32,35 +44,37 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/TransformEx.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file:///Applications/Unity/Hub/Editor/2020.2.2f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/33061422-5C16-498F-8301-BBDAF5D693A7/06/0030dafc/Debug.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B8BC167D-E93E-4CD7-ACB3-FCE533DC4CBC/0d/e5b1e938/Mesh.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B8BC167D-E93E-4CD7-ACB3-FCE533DC4CBC/7f/6929519d/Plane.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C881E71-2F79-461D-96F9-95658A2D07FF/27/255861db/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C881E71-2F79-461D-96F9-95658A2D07FF/95/609cd2ca/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9577AC7A-62EF-4317-9789-031239BA8798/dd/39d7c031/Array.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlaneEx.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B54C5F8C-BD8A-46C6-B18A-2B3EF785AD6D/a4/0ea79f66/String.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/913E4BB3-45CE-431F-BA1E-37D268006ABF/1e/14385747/InspectorElement.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B54C5F8C-BD8A-46C6-B18A-2B3EF785AD6D/a5/460157fe/Buffer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DB279785-10F3-4917-A47C-8EBE498A6EA2/ad/1e02f9c6/Transform.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9577AC7A-62EF-4317-9789-031239BA8798/d0/69b66dcc/Random.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9577AC7A-62EF-4317-9789-031239BA8798/dd/cc3b36ba/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C881E71-2F79-461D-96F9-95658A2D07FF/e0/8e2dc70d/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file:///Applications/Unity/Hub/Editor/2020.2.2f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C881E71-2F79-461D-96F9-95658A2D07FF/e0/07810670/Mathf.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9577AC7A-62EF-4317-9789-031239BA8798/3b/cbf823b7/String.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C881E71-2F79-461D-96F9-95658A2D07FF/2a/19436b22/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/63582776-4962-4670-81A3-96D130631DF1/3a/e0256090/Editor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9577AC7A-62EF-4317-9789-031239BA8798/bf/0a7c09c6/Buffer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C881E71-2F79-461D-96F9-95658A2D07FF/f9/059254ea/Plane.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file:///Applications/Unity/Hub/Editor/2020.2.2f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DB279785-10F3-4917-A47C-8EBE498A6EA2/10/2be6692e/Plane.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8B1D5428-F1FF-4712-A425-6E4F4F3370E4/5f/567b5992/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C881E71-2F79-461D-96F9-95658A2D07FF/d7/64c1e2f6/InvokableCall.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/EzySlice/EzySlice/Slicer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/33061422-5C16-498F-8301-BBDAF5D693A7/be/ed5b962e/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DebugDrawingExtension/DebugExtension.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C881E71-2F79-461D-96F9-95658A2D07FF/d0/1e7d4de7/Debug.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DB279785-10F3-4917-A47C-8EBE498A6EA2/66/6f8ce4dc/Vector3.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file:///Applications/Unity/Hub/Editor/2020.2.2f1/Unity.app/Contents/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8B1D5428-F1FF-4712-A425-6E4F4F3370E4/52/1bff4fa6/Plane.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/7C881E71-2F79-461D-96F9-95658A2D07FF/e7/ac6398dc/Random.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8B1D5428-F1FF-4712-A425-6E4F4F3370E4/c8/d15827a1/Transform.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/63582776-4962-4670-81A3-96D130631DF1/b2/550d1263/Undo.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B8BC167D-E93E-4CD7-ACB3-FCE533DC4CBC/d0/d69ee5ac/InvokableCall.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/B8BC167D-E93E-4CD7-ACB3-FCE533DC4CBC/52/8310817d/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
@@ -68,12 +82,16 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Examples/Scripts/Editor/PlaneUsageExampleEditor.cs" />
-      <option value="$PROJECT_DIR$/Assets/Examples/Scripts/Shatter.cs" />
-      <option value="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Slicer.cs" />
       <option value="$PROJECT_DIR$/Assets/Examples/Scripts/Editor/ShatterEditor.cs" />
       <option value="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Framework/Plane.cs" />
+      <option value="$PROJECT_DIR$/Assets/Examples/Debug/Scripts/IntersectionDebug.cs" />
+      <option value="$PROJECT_DIR$/Assets/Examples/Scripts/PlaneUsageExample.cs" />
+      <option value="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Slicer.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/PlaneEx.cs" />
+      <option value="$PROJECT_DIR$/Assets/Examples/Scripts/Shatter.cs" />
       <option value="$PROJECT_DIR$/Assets/EzySlice/EzySlice/SlicerExtensions.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/TransformEx.cs" />
+      <option value="$PROJECT_DIR$/Assets/EzySlice/EzySlice/Framework/Intersector.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1nwOTWpRsTPGnUewD7NiRcNHXcG" />
@@ -103,10 +121,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="51526">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="91571">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="51526" />
+      <option name="pid" value="91571" />
       <option name="selectedOptions">
         <list />
       </option>
@@ -127,6 +145,21 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -134,16 +167,16 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Examples/Scripts/Shatter.cs</url>
-          <line>47</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/Examples/Scripts/Shatter.cs" initialLine="47" containingFunctionPresentation="method 'ShatterObject'">
+          <line>84</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Examples/Scripts/Shatter.cs" initialLine="85" containingFunctionPresentation="method 'GetRandomPlane'">
             <startOffsets>
-              <option value="1408" />
+              <option value="2731" />
             </startOffsets>
             <endOffsets>
-              <option value="1547" />
+              <option value="2781" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
